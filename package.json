@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start":"node index.js"
+    "start": "node index.js"
   },
   "author": "dexo",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "input": "^1.0.1",
     "telegram": "^2.12.8"
   }
