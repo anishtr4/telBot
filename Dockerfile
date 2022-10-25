@@ -3,5 +3,5 @@ WORKDIR /app
 COPY package.json /app
 COPY . /app
 RUN npm install 
-CMD node index.js
+CMD node server.js
 EXPOSE 8084
