@@ -1,7 +1,7 @@
 FROM node:16
-# Create app directory
-WORKDIR /usr/src/app
-COPY package*.json ./
-COPY . .
-EXPOSE 8088
-CMD [ "node", "index.js" ]
+WORKDIR /app
+COPY package.json /app
+RUN npm ci --only=production && npm cache clean --force
+COPY . /app
+CMD node index.js
+EXPOSE 8084
